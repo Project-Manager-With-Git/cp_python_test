@@ -1,0 +1,27 @@
+{
+    "language": "py",
+    "mini_language_version": "3.5",
+    "description": "python的各种测试模板",
+    "author": "hsz",
+    "template_type": "components",
+    "requires": [
+        "coverage >= 5.5"
+    ],
+    "template_keys": {
+        "app_name_camelcase": {
+            "description": "服务应用名,默认为项目名称",
+            "default": "{{ project_name | replace(\"_\", \" \") | replace(\"-\", \" \") | title | replace(\" \", \"\") }}"
+        },
+        "app_name_lower":{
+            "description": "服务应用名的驼峰形式,默认为项目名称",
+            "default":"{{ project_name | lower }}_cli"
+        }
+    },
+    "components": {
+        "simplerpc_tests": {
+            "source": "simplerpc_tests",
+            "description": "xml-rpc和json-rpc的测试",
+            "default_path": "tests"
+        }
+    }
+}

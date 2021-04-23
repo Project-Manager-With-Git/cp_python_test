@@ -2,7 +2,7 @@ import unittest
 from pathlib import Path
 from typing import Dict, Any
 
-from cp_python_test_cli import CpPythonTestClient, MultiCall
+from {{ app_name_lower }}_cli import {{ app_name_camelcase }}Client, MultiCall
 from subprocess import Popen, PIPE
 
 
@@ -21,7 +21,7 @@ class QueryTest(unittest.TestCase):
 
     def setUp(self):
         url = "http://localhost:5000"
-        self.cli = CpPythonTestClient(url)
+        self.cli = {{ app_name_camelcase }}Client(url)
         print("section start")
 
     def tearDown(self):
