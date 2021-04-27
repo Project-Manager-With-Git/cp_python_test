@@ -14,7 +14,7 @@
         },
         "app_name_lower":{
             "description": "服务应用名的驼峰形式,默认为项目名称",
-            "default":"{{ project_name | lower }}_cli"
+            "default":"{{ project_name | lower }}"
         }
     },
     "components": {
