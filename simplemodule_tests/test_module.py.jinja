@@ -1,0 +1,21 @@
+import unittest
+from pathlib import Path
+
+from {{ app_name_lower }}.example import Example
+
+
+class ExampleTest(unittest.TestCase):
+
+    def setUp(self) -> None:
+        url = "http://localhost:5000"
+        self.instance = Example("abc")
+        print("section start")
+
+    def tearDown(self) -> None:
+        print("section end")
+
+    def test_example_hello(self) -> None:
+        assert self.instance.hello() == "hello abc"
+
+    def test_example_bye(self) -> None:
+        assert self.instance.bye() == "bye abc"

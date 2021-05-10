@@ -19,12 +19,12 @@ class QueryTest(unittest.TestCase):
         cls.backprocess.kill()
         print("关闭rpc服务")
 
-    def setUp(self):
+    def setUp(self)->None:
         url = "http://localhost:5000"
         self.cli = {{ app_name_camelcase }}Client(url)
         print("section start")
 
-    def tearDown(self):
+    def tearDown(self)->None:
         print("section end")
 
     def test_multi(self) -> None:

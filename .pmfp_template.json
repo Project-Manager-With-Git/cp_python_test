@@ -22,6 +22,11 @@
             "source": "simplerpc_tests",
             "description": "xml-rpc和json-rpc的测试",
             "default_path": "tests"
+        },
+        "simplemodule_tests":{
+            "source": "simplemodule_tests",
+            "description": "构造模块项目的测试",
+            "default_path": "tests"
         }
     }
 }
