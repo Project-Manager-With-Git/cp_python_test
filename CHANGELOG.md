@@ -1,6 +1,4 @@
-# cp_python_test
-
-python测试组件包
+# v0.0.1
 
 ## 包含模板
 

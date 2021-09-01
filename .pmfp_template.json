@@ -20,12 +20,12 @@
     "components": {
         "simplerpc_tests": {
             "source": "simplerpc_tests",
-            "description": "xml-rpc和json-rpc的测试",
+            "description": "xml-rpc和json-rpc的接口测试",
             "default_path": "tests"
         },
         "simplemodule_tests":{
             "source": "simplemodule_tests",
-            "description": "构造模块项目的测试",
+            "description": "构造模块项目的单元测试",
             "default_path": "tests"
         }
     }
